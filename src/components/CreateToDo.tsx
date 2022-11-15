@@ -27,13 +27,14 @@ function CreateToDo() {
       ...oldToDos,
     ]);
 
+    // Local Storage Ver ==================
     const oldToDosString = localStorage.getItem(category);
     const oldToDos: IToDo[] =
       oldToDosString !== null ? JSON.parse(oldToDosString) : [];
     const newToDos = [{ text: toDo, id: Date.now(), category }, ...oldToDos];
 
     localStorage.setItem(category, JSON.stringify(newToDos));
-
+    // =====================================
     setValue("toDo", "");
   };
 

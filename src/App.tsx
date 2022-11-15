@@ -77,9 +77,6 @@ function App() {
     <>
       <GlobalStyle />
       <ToDoList />
-      <hr />
-      <hr />
-      <ToDoListLocal />
     </>
   );
 }

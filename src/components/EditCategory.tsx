@@ -17,7 +17,7 @@ const Input = styled.input``;
 
 const Btn = styled.button``;
 
-function AddCategory() {
+function EditCategory() {
   const { register, handleSubmit, setValue } = useForm<ICategory>();
   const setCategories = useSetRecoilState(categories);
   const handleNewCategory = ({ newCategory }: ICategory) => {
@@ -42,4 +42,4 @@ function AddCategory() {
   );
 }
 
-export default AddCategory;
+export default EditCategory;
